@@ -51,7 +51,7 @@ function displayUsers() {
         
         // Create a list item for each user
         const listItem = document.createElement('li');
-        listItem.textContent = `id: ${user.id}, Username: ${user.username}, Email: ${user.email}, Phone: ${user.phone}`;
+        listItem.textContent = ` expense: ${user.username}, description: ${user.email}, category: ${user.phone}`;
 
         // Create a delete button
         const deleteButton = document.createElement('button');

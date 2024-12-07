@@ -7,16 +7,33 @@
     <title>User Form</title>
   </head>
   <body style="margin: 0">
+
     <form onsubmit="handleFormSubmit(event)">
+      <label for="expense" class="form-label">expense</label>
+      <input type="text" name="expense" id="username" />
+      <label for="description" class="form-label">description</label>
+      <input type="description" name="description" id="email" />
+  
+      <label for="category" class="form-label">category</label>
+      <select id="phone" name="category" class="fcorm-select form-select-sm" aria-label="Default select example">
+        <option value="movie">movie</option>
+        <option value="fuel">fuel</option>
+        <option value="hobbies">hobbies</option>
+      </select>
+      <button type="submit" class="btn btn-primary" style=" margin-left:30px">ADD</button>
+    </div>
+    </form>
+    
+    <!-- <form onsubmit="handleFormSubmit(event)">
  
-      <label for="username">Username</label>
+      <label for="username">expense</label>
       <input type="text" name="username" id="username" required />
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" required />
-      <label for="phone">Phone No</label>
+      <label for="email">description</label>
+      <input type="text" name="email" id="email" required />
+      <label for="phone">category</label>
       <input type="tel" name="phone" id="phone" required />
       <button type="submit">Submit</button>
-    </form>
+    </form> -->
 
     <!-- Unordered list to display the users -->
     <ul id="user-list"></ul>
